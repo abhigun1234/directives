@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./structrual.component.css']
 })
 export class StructrualComponent implements OnInit {
-  person='abhishek'
+  person='ab'
   changeText="hi"
   value=false
   friuits=['<mango ','banana','pinaple','orange']
+  employees=[{id:'1',name:'raj',salary:'2345'},{id:'1',name:'kamal',salary:'2345'},]
 
   urls=['html','css','js','jquery']
   constructor() { }

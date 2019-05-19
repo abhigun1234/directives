@@ -6,18 +6,27 @@ import { AppComponent } from './app.component';
 import { StructrualComponent } from './structrual/structrual.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductComponent } from './product/product.component';
-
+import { AttributeComponent } from './attribute/attribute.component';
+import { ProertybindingComponent } from './proertybinding/proertybinding.component';
+import { TwowayComponent } from './twoway/twoway.component';
+import {FormsModule} from '@angular/forms';
+import { TemplatevarComponent } from './templatevar/templatevar.component'
 @NgModule({
   declarations: [
     AppComponent,
     StructrualComponent,
-    ProductComponent
+    ProductComponent,
+    AttributeComponent,
+    ProertybindingComponent,
+    TwowayComponent,
+    TemplatevarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

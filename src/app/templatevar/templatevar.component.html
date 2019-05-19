@@ -1,0 +1,7 @@
+<label >Enter Your Name</label>
+<!-- <input [id]="myId" #name type="text"> -->
+<!-- <input id={{myId}} #name type="text"> -->
+<input  [disabled]="changevalue" id={{myId}}  type="text">
+<input [(ngModel)]="name"  type="text">
+{{name}}
+<button (click)="clickMe(name.value)" >click</button>

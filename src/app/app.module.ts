@@ -10,7 +10,8 @@ import { AttributeComponent } from './attribute/attribute.component';
 import { ProertybindingComponent } from './proertybinding/proertybinding.component';
 import { TwowayComponent } from './twoway/twoway.component';
 import {FormsModule} from '@angular/forms';
-import { TemplatevarComponent } from './templatevar/templatevar.component'
+import { TemplatevarComponent } from './templatevar/templatevar.component';
+import { AtttributedirdemoComponent } from './atttributedirdemo/atttributedirdemo.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { TemplatevarComponent } from './templatevar/templatevar.component'
     AttributeComponent,
     ProertybindingComponent,
     TwowayComponent,
-    TemplatevarComponent
+    TemplatevarComponent,
+    AtttributedirdemoComponent
   ],
   imports: [
     BrowserModule,

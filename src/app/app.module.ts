@@ -11,7 +11,8 @@ import { ProertybindingComponent } from './proertybinding/proertybinding.compone
 import { TwowayComponent } from './twoway/twoway.component';
 import {FormsModule} from '@angular/forms';
 import { TemplatevarComponent } from './templatevar/templatevar.component';
-import { AtttributedirdemoComponent } from './atttributedirdemo/atttributedirdemo.component'
+import { AtttributedirdemoComponent } from './atttributedirdemo/atttributedirdemo.component';
+import { ProductlistComponent } from './productlist/productlist.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { AtttributedirdemoComponent } from './atttributedirdemo/atttributedirdem
     ProertybindingComponent,
     TwowayComponent,
     TemplatevarComponent,
-    AtttributedirdemoComponent
+    AtttributedirdemoComponent,
+    ProductlistComponent
   ],
   imports: [
     BrowserModule,

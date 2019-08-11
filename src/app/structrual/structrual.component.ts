@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./structrual.component.css']
 })
 export class StructrualComponent implements OnInit {
-  person='ab'
+  person='Vijay'
   changeText="hi"
   value=false
   friuits=['<mango ','banana','pinaple','orange']

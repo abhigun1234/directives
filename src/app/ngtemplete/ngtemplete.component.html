@@ -1,0 +1,5 @@
+<div *ngIf="flag">
+  <div *ngIf="isValid;then content else other_content">here is ignored</div>    
+<ng-template #content>content here...</ng-template>
+<ng-template #other_content>other content here...</ng-template>
+</div>

@@ -6,14 +6,16 @@ import {Product} from '../app/product'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'dirictivesdemo';
-  productList
-  addproduct(name:string,price:string,description)
-  {
-    let prod=new Product(name,price,description)
-    //prod.setName(name)
-
-    this.productList.push(prod)
+  // title = 'dirictivesdemo';
+  // productList
+  // flag=false
+ private sports=['cripubcket','basketball','vollyball']
+  // sport:any;
   
-  }
+  //   let prod=new Product(name,price,description)
+  //   //prod.setName(name)
+
+  //   this.productList.push(prod)
+  
+  // }
 }

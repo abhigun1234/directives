@@ -12,7 +12,11 @@ import { TwowayComponent } from './twoway/twoway.component';
 import {FormsModule} from '@angular/forms';
 import { TemplatevarComponent } from './templatevar/templatevar.component';
 import { AtttributedirdemoComponent } from './atttributedirdemo/atttributedirdemo.component';
-import { ProductlistComponent } from './productlist/productlist.component'
+import { ProductlistComponent } from './productlist/productlist.component';
+import { FirstComponent} from './first/first.component';
+import { ViewchildComponent } from './viewchild/viewchild.component';
+import { NgtempleteComponent } from './ngtemplete/ngtemplete.component';
+import { LoginComponent } from './login/login.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +27,11 @@ import { ProductlistComponent } from './productlist/productlist.component'
     TwowayComponent,
     TemplatevarComponent,
     AtttributedirdemoComponent,
-    ProductlistComponent
+    ProductlistComponent,
+    FirstComponent,
+    ViewchildComponent,
+    NgtempleteComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

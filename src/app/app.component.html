@@ -19,4 +19,17 @@
 
 <!-- </div>
 <app-viewchild></app-viewchild> -->
-<app-login></app-login>
+
+<img src="assets/ipl.png" />
+<div *ngIf="show">
+   <div  *ngFor="let team of iplTeams" class="card" style="width: 18rem;">
+      
+      <div class="card-body">
+        {{team.name}}
+      </div>
+    </div>
+
+</div>
+<button (click)="showTeams()">check Teams</button>
+
+<!-- <app-login></app-login> -->

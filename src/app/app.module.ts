@@ -16,7 +16,8 @@ import { ProductlistComponent } from './productlist/productlist.component';
 import { FirstComponent} from './first/first.component';
 import { ViewchildComponent } from './viewchild/viewchild.component';
 import { NgtempleteComponent } from './ngtemplete/ngtemplete.component';
-import { LoginComponent } from './login/login.component'
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,8 @@ import { LoginComponent } from './login/login.component'
     FirstComponent,
     ViewchildComponent,
     NgtempleteComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

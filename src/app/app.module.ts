@@ -17,7 +17,10 @@ import { FirstComponent} from './first/first.component';
 import { ViewchildComponent } from './viewchild/viewchild.component';
 import { NgtempleteComponent } from './ngtemplete/ngtemplete.component';
 import { LoginComponent } from './login/login.component';
-import { HomeComponent } from './home/home.component'
+import { HomeComponent } from './home/home.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +36,10 @@ import { HomeComponent } from './home/home.component'
     ViewchildComponent,
     NgtempleteComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    AboutusComponent,
+    ContactusComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,

@@ -20,7 +20,7 @@
 <!-- </div>
 <app-viewchild></app-viewchild> -->
 
-<img src="assets/ipl.png" />
+<!-- <img src="assets/ipl.png" />
 <div class="showplayers" *ngIf="show">
    <h1>Teams</h1>
    <div  *ngFor="let team of iplTeams" class="card" style="width: 18rem;">
@@ -30,7 +30,7 @@
       </div>
     </div>
 
-</div>
+</div> -->
 <!-- <button (click)="showTeams()">check Teams</button>
 <div >
 <p  [ngClass]="{classOne:cone,classTwo:ctwo,classTree:cThree}">
@@ -43,3 +43,9 @@
 
 <!-- <p [ngClass]="{changColor:colorvar}" class="changColor">Hello  how are you</p>
 <p [ngStyle]="{'background-color':color}">Choose your players</p> -->
+<ul>
+   <li><a [routerLink] = "['/about']">About Us</a></li>
+   <li><a [routerLink] = "['/contact']">Contact Us</a></li>
+   <li><a [routerLink] = "['/home']">Home</a></li>
+</ul>
+<router-outlet></router-outlet>

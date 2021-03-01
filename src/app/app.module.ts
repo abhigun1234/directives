@@ -22,7 +22,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { TeamComponent } from './team/team.component';
-import { TeamdetailsComponent } from './teamdetails/teamdetails.component'
+import { TeamdetailsComponent } from './teamdetails/teamdetails.component';
+import { PlayersComponent } from './players/players.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +44,8 @@ import { TeamdetailsComponent } from './teamdetails/teamdetails.component'
     ContactusComponent,
     PagenotfoundComponent,
     TeamComponent,
-    TeamdetailsComponent
+    TeamdetailsComponent,
+    PlayersComponent
   ],
   imports: [
     BrowserModule,

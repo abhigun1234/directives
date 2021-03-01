@@ -17,6 +17,9 @@ export class TeamdetailsComponent implements OnInit {
     
       alert(name)
       this.name=name;
+      // if(id==1){
+
+      // }
   }
 
 }

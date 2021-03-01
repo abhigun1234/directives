@@ -1,0 +1,9 @@
+<h3>
+ Ipl Teams
+</h3>
+<ul class="list-group">
+<li (click)="onSelect(team)" class="list-group-item " *ngFor="let team of teamList">
+<span class="badge">{{team.id}}</span> : {{team.name}}
+</li>
+
+</ul>

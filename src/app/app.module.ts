@@ -20,7 +20,9 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
-import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component'
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { TeamComponent } from './team/team.component';
+import { TeamdetailsComponent } from './teamdetails/teamdetails.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +41,9 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component'
     HomeComponent,
     AboutusComponent,
     ContactusComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    TeamComponent,
+    TeamdetailsComponent
   ],
   imports: [
     BrowserModule,

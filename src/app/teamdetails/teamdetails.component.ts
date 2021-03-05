@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute  } from '@angular/router'
 import {TeamService} from '..//team.service'
+import {Router} from '@angular/router'
 @Component({
   selector: 'app-teamdetails',
   templateUrl: './teamdetails.component.html',
@@ -19,7 +20,7 @@ export class TeamdetailsComponent implements OnInit {
 //  {id:8,name:"SRH" ,"owner":"abc"},
  
 //    ]
-  constructor(private route:ActivatedRoute,private teamService:TeamService) {
+  constructor(private route:ActivatedRoute,private teamService:TeamService,private routeby:Router) {
     // alert('constructor')
    }
 
@@ -34,5 +35,15 @@ export class TeamdetailsComponent implements OnInit {
 
       // }
   }
+  nevigateToPlayer(){
+ this.routeby.navigateByUrl('player')
+
+  }
+
+  nevigateToPlayerDetails(){
+
+    this.routeby.navigateByUrl('playerdetails')
+  }
+
 
 }

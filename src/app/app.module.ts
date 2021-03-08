@@ -24,7 +24,9 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { TeamComponent } from './team/team.component';
 import { TeamdetailsComponent } from './teamdetails/teamdetails.component';
 import { PlayersComponent } from './players/players.component';
-import { PlayerdetailsComponent } from './playerdetails/playerdetails.component'
+import { PlayerdetailsComponent } from './playerdetails/playerdetails.component';
+import { CourseListComponent } from './course-list/course-list.component'
+import {HttpClientModule} from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,14 +49,16 @@ import { PlayerdetailsComponent } from './playerdetails/playerdetails.component'
     TeamComponent,
     TeamdetailsComponent,
     PlayersComponent,
-    PlayerdetailsComponent
+    PlayerdetailsComponent,
+    CourseListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

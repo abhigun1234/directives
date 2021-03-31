@@ -26,7 +26,10 @@ import { TeamdetailsComponent } from './teamdetails/teamdetails.component';
 import { PlayersComponent } from './players/players.component';
 import { PlayerdetailsComponent } from './playerdetails/playerdetails.component';
 import { CourseListComponent } from './course-list/course-list.component'
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { TripComponent } from './trip/trip.component';
+import { FlightComponent } from './flight/flight.component';
+import { FlishdetailsComponent } from './flishdetails/flishdetails.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +53,10 @@ import {HttpClientModule} from '@angular/common/http'
     TeamdetailsComponent,
     PlayersComponent,
     PlayerdetailsComponent,
-    CourseListComponent
+    CourseListComponent,
+    TripComponent,
+    FlightComponent,
+    FlishdetailsComponent
   ],
   imports: [
     BrowserModule,

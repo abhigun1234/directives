@@ -3,12 +3,15 @@ import { Routes, RouterModule } from '@angular/router';
 import {AboutusComponent} from '..//app/aboutus/aboutus.component'
 import {ContactusComponent} from '..//app/contactus/contactus.component'
 import {HomeComponent} from '..//app/home/home.component'
+import { FlightComponent } from './flight/flight.component';
+import { FlishdetailsComponent } from './flishdetails/flishdetails.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { PlayerdetailsComponent } from './playerdetails/playerdetails.component';
 import { PlayersComponent } from './players/players.component';
 import { TeamComponent } from './team/team.component';
 import { TeamdetailsComponent } from './teamdetails/teamdetails.component';
-const routes: Routes = [{path:'',component:HomeComponent},
+import { TripComponent } from './trip/trip.component';
+const routes: Routes = [{path:'',component:FlightComponent},
   {path:'about',component:AboutusComponent},
 {path:'contact',component:ContactusComponent},
 {path:'home',component:HomeComponent},
@@ -16,6 +19,9 @@ const routes: Routes = [{path:'',component:HomeComponent},
 {path:'teams/:id',component:TeamdetailsComponent},
 {path:'player',component:PlayersComponent},
 {path:'playerdetails',component:PlayerdetailsComponent},
+{path:'Flight',component:FlightComponent},
+{path:'FlightDetails',component:FlishdetailsComponent},
+{path:'Trip',component:TripComponent},
 {path:'**',component:PagenotfoundComponent}];
 
 @NgModule({

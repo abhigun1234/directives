@@ -15,7 +15,7 @@ export class TeamComponent implements OnInit {
   }
   onSelect(team){
     console.log(team)
-      this.route.navigate(['teams',team.id])
+      this.route.navigate(['teams',team.name])
     // this.route.navigateByUrl('/teams')
 
   }

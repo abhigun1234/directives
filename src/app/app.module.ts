@@ -30,7 +30,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { TripComponent } from './trip/trip.component';
 import { FlightComponent } from './flight/flight.component';
 import { FlishdetailsComponent } from './flishdetails/flishdetails.component';
-import { ProductdetailsComponent } from './productdetails/productdetails.component'
+import { ProductdetailsComponent } from './productdetails/productdetails.component';
+import { UserComponent } from './user/user.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,7 +59,8 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
     TripComponent,
     FlightComponent,
     FlishdetailsComponent,
-    ProductdetailsComponent
+    ProductdetailsComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,

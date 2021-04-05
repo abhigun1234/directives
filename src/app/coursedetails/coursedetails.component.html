@@ -1,0 +1,9 @@
+<button (click)="getCourseData()">CourseData</button>
+<div   *ngFor="let course of courseData" class="card" style="width: 18rem;">
+  <img src="..." class="courseData card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{course.id}}</h5>
+    <p class="card-text">{{course.name}}</p>
+    <a href="#" class="btn btn-primary">{{course.fees}}</a>
+  </div>
+</div>

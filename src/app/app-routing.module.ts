@@ -13,7 +13,7 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
 import { TeamComponent } from './team/team.component';
 import { TeamdetailsComponent } from './teamdetails/teamdetails.component';
 import { TripComponent } from './trip/trip.component';
-const routes: Routes = [{path:'',component:ProductComponent},
+const routes: Routes = [{path:'dd',component:ProductComponent},
   {path:'about',component:AboutusComponent},
 {path:'contact',component:ContactusComponent},
 {path:'home',component:HomeComponent},

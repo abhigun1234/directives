@@ -1,4 +1,4 @@
-
+<!-- 
 <div *ngFor="let product of products">
 <mat-card class="example-card">
   <mat-card-header>
@@ -11,4 +11,12 @@
 </mat-card>
 <button (click)="sendProduct()">sendProduct</button>
 </div>
-
+ -->
+ <div class ="container">
+  <h2>User Data</h2>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class ="form-group">
+      <label>Name</label>
+      <input type="text"    class="form-control" formControlName="name" >
+     <button>Submit</button>
+    </div>

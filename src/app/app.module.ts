@@ -9,7 +9,7 @@ import { ProductComponent } from './product/product.component';
 import { AttributeComponent } from './attribute/attribute.component';
 import { ProertybindingComponent } from './proertybinding/proertybinding.component';
 import { TwowayComponent } from './twoway/twoway.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { TemplatevarComponent } from './templatevar/templatevar.component';
 import { AtttributedirdemoComponent } from './atttributedirdemo/atttributedirdemo.component';
 import { ProductlistComponent } from './productlist/productlist.component';
@@ -70,7 +70,7 @@ import { CoursedetailsComponent } from './coursedetails/coursedetails.component'
     BrowserAnimationsModule,
     MatCardModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

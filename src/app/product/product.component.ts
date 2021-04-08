@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {ProductService} from '..//product.service'
 import {Router} from '@angular/router'
 import {FormGroup,FormControl,Validators} from '@angular/forms'
-
+import productdata from '../..//assets/data.json';
+import  {HttpClient} from '@angular/common/http'
  @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -10,8 +11,9 @@ import {FormGroup,FormControl,Validators} from '@angular/forms'
 })
 export class ProductComponent implements OnInit {
   products=[{id:"1",name:'addidas',price:'2345'},{id:"1",name:'nike',price:'2345'}]
-  constructor(private product :ProductService,private router:Router) { }
+  constructor(private product :ProductService,private router:Router,private httpClient:HttpClient) { }
   flag=true;
+   productData
   nameObj:any;
   // userForm=new FormGroup({name :new FormControl('',[Validators.required,Validators.minLength(5),Validators.maxLength(7)]),
   // email:new FormControl(''),age:new FormControl('',Validators.required),
@@ -19,6 +21,12 @@ export class ProductComponent implements OnInit {
   //   city:new FormControl(),state:new FormControl(),postelcode:new FormControl()})})
   userForm=new FormGroup({name:new FormControl('abhishek',[Validators.required,Validators.minLength(6)])})
   ngOnInit() {
+    console.log("productdata",productdata)
+    this.httpClient.get("assets/data.json").subscribe(data =>{
+      console.log("product data ");
+      this.productData=data
+      // this.products = data;
+    })
   }
   sendProduct(){
   this.product.setProduct(this.products)

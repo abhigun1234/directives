@@ -12,11 +12,26 @@
 <button (click)="sendProduct()">sendProduct</button>
 </div>
  -->
- <div class ="container">
+ <!-- <div class ="container">
   <h2>User Data</h2>
   <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
     <div class ="form-group">
       <label>Name</label>
       <input type="text"    class="form-control" formControlName="name" >
      <button>Submit</button>
+    </div> -->
+    <table style="width:100%">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <div *ngFor="let data of productData">
+      <tr>
+        <td>{{data.name}}</td>
+        <td>{{data.id}}</td>
+        <td>{{data.price}}</td>
+      </tr>
+     
     </div>
+    </table>

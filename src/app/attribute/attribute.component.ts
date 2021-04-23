@@ -19,5 +19,8 @@ export class AttributeComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  changeMe(){
+    alert("hello")
+  this.cone=true;    
+  }
 }

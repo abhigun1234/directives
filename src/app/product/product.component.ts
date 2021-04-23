@@ -21,9 +21,11 @@ export class ProductComponent implements OnInit {
   //   city:new FormControl(),state:new FormControl(),postelcode:new FormControl()})})
   userForm=new FormGroup({name:new FormControl('abhishek',[Validators.required,Validators.minLength(6)])})
   ngOnInit() {
+   // debugger
     console.log("productdata",productdata)
     this.httpClient.get("assets/data.json").subscribe(data =>{
       console.log("product data ");
+    
       this.productData=data
       // this.products = data;
     })

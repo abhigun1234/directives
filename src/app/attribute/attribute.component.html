@@ -1,9 +1,13 @@
-<p  [ngClass]="{classOne:cone,classTwo:ctwo,classTree:cThree}">
+<!-- <p  [ngClass]="{classOne:cone,classTwo:ctwo,classTree:cThree}">
  Hello
 </p>
 <p [ngStyle]="{'background-color':color}">Bye</p>
 
-<!-- <p class="abc">Hello Angular</p>
-<button class="myBtn">ok</button> -->
 
-<button [ngClass]="{classThree:cThree}">click</button>
+<button [ngClass]="{classThree:cThree}">click</button> -->
+
+ <p  [ngClass]="{classOne:cone}">
+ Hello
+</p>
+
+<button (click)="changeMe()">Change</button>

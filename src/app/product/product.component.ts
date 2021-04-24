@@ -10,7 +10,8 @@ import  {HttpClient} from '@angular/common/http'
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-  products=[{id:"1",name:'addidas',price:'2345'},{id:"1",name:'nike',price:'2345'}]
+  //products=[{id:"1",name:'addidas',price:'2345'},{id:"1",name:'nike',price:'2345'}]
+  products:any=[]
   constructor(private product :ProductService,private router:Router,private httpClient:HttpClient) { }
   flag=true;
    productData
@@ -23,12 +24,13 @@ export class ProductComponent implements OnInit {
   ngOnInit() {
    // debugger
     console.log("productdata",productdata)
-    this.httpClient.get("assets/data.json").subscribe(data =>{
-      console.log("product data ");
+    this.products=productdata;
+    // this.httpClient.get("assets/data.json").subscribe(data =>{
+    //   console.log("product data ");
     
-      this.productData=data
-      // this.products = data;
-    })
+    //   this.productData=data
+    //   // this.products = data;
+    // })
   }
   sendProduct(){
   this.product.setProduct(this.products)
@@ -39,12 +41,12 @@ export class ProductComponent implements OnInit {
   {
 
     console.log(this.userForm.value)
-  this.nameObj=this.userForm.value
-  console.log(this.nameObj.name)
-  if(this.nameObj.name==='abhishek'){
-      alert("hello")
-     this.router.navigateByUrl('/productDetails')
-  }
+    this.nameObj=this.userForm.value
+    console.log(this.nameObj.name)
+    if(this.nameObj.name==='abhishek'){
+        alert("hello")
+      this.router.navigateByUrl('/productDetails')
+    }
 
   }
 }

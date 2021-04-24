@@ -5,6 +5,7 @@ import {ContactusComponent} from '..//app/contactus/contactus.component'
 import {HomeComponent} from '..//app/home/home.component'
 import { FlightComponent } from './flight/flight.component';
 import { FlishdetailsComponent } from './flishdetails/flishdetails.component';
+import { MyproductComponent } from './myproduct/myproduct.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { PlayerdetailsComponent } from './playerdetails/playerdetails.component';
 import { PlayersComponent } from './players/players.component';
@@ -13,7 +14,7 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
 import { TeamComponent } from './team/team.component';
 import { TeamdetailsComponent } from './teamdetails/teamdetails.component';
 import { TripComponent } from './trip/trip.component';
-const routes: Routes = [{path:'',component:AboutusComponent},
+const routes: Routes = [{path:'',component:MyproductComponent},
   {path:'about',component:AboutusComponent},
 {path:'contact',component:ContactusComponent},
 {path:'home',component:HomeComponent},

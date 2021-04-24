@@ -32,7 +32,8 @@ import { FlightComponent } from './flight/flight.component';
 import { FlishdetailsComponent } from './flishdetails/flishdetails.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
 import { UserComponent } from './user/user.component';
-import { CoursedetailsComponent } from './coursedetails/coursedetails.component'
+import { CoursedetailsComponent } from './coursedetails/coursedetails.component';
+import { MyproductComponent } from './myproduct/myproduct.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,7 +63,8 @@ import { CoursedetailsComponent } from './coursedetails/coursedetails.component'
     FlishdetailsComponent,
     ProductdetailsComponent,
     UserComponent,
-    CoursedetailsComponent
+    CoursedetailsComponent,
+    MyproductComponent
   ],
   imports: [
     BrowserModule,

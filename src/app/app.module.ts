@@ -37,6 +37,7 @@ import { CoursedetailsComponent } from './coursedetails/coursedetails.component'
 import { MyproductComponent } from './myproduct/myproduct.component';
 import { EmpListComponent } from './emp-list/emp-list.component';
 import { StudenDetailsComponent } from './studen-details/studen-details.component'
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -77,6 +78,7 @@ import { StudenDetailsComponent } from './studen-details/studen-details.componen
     BrowserAnimationsModule,
     MatCardModule,
     FormsModule,MatListModule,
+    MatButtonModule,
     
     HttpClientModule,ReactiveFormsModule
   ],
